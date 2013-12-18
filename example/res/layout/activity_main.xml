@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fl_root"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_conditions"
+            android:layout_width="fill_parent"
+            android:scrollbars="none"
+            android:background="@color/COLOR_B"
+            android:layout_marginTop="50dp"
+            android:layout_height="35dp">
+
+            <LinearLayout
+                android:id="@+id/ll_conditions"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text=" - "
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/condition_valid_bg"
+                    android:paddingRight="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="#FF2A2A2A" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="50dp">
+
+            <TextView
+                android:gravity="center"
+                android:text="Tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/condition_invalid_bg"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#FF2A2A2A" />
+
+            <TextView
+                android:text="Tab2"
+                android:gravity="center"
+                android:background="@drawable/condition_valid_bg"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#FF2A2A2A" />
+
+            <TextView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Tab3"
+                android:background="@drawable/condition_invalid_bg"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#FF2A2A2A" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/condition_invalid_bg"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="50dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FF2A2A2A" />
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_gravity="bottom"
+        android:id="@+id/hsv_conditions_bottom"
+        android:layout_width="fill_parent"
+        android:background="@color/COLOR_B"
+        android:scrollbars="none"
+        android:layout_height="35dp">
+
+        <LinearLayout
+            android:id="@+id/ll_conditions_bottom"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text=" + "
+                android:paddingLeft="20dp"
+                android:background="@drawable/condition_valid_bg"
+                android:paddingRight="20dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#FF2A2A2A" />
+
+            <TextView
+                android:gravity="center"
+                android:text="apple"
+                android:paddingLeft="20dp"
+                android:background="@drawable/condition_invalid_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingRight="20dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="orange"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/condition_invalid_bg"
+                android:paddingRight="20dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="banana"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/condition_invalid_bg"
+                android:paddingRight="20dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="watermelon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:background="@drawable/condition_invalid_bg"
+                android:paddingRight="20dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="cherry"
+                android:paddingLeft="20dp"
+                android:background="@drawable/condition_invalid_bg"
+                android:paddingRight="20dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/condition_invalid_bg"
+                android:text="grape"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/condition_invalid_bg"
+                android:gravity="center"
+                android:text="pineapple"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:text="peach"
+                android:background="@drawable/condition_invalid_bg"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>
