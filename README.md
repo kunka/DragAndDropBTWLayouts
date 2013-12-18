@@ -7,6 +7,7 @@ Perform drag and drop items in Android between two Layouts.
 
 Sample Code:
 
+```java
     // test drag and transfer
     FrameLayout rootFrameLayout;
     LinearLayout topLL;         
@@ -75,3 +76,4 @@ Sample Code:
             }
         });
         bottomLL.setOnTouchListener(mBottomDraggableLinearLayoutTouchListener);
+    
